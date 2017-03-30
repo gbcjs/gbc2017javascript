@@ -1,6 +1,8 @@
-// Review of Functions/Objects/Arrays
-
 // IF
+
+if (1 > 2) {
+	// code..
+}
 
 // ELSE
 
