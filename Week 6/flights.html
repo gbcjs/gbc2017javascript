@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div>
+			<form class="form-horizontal" style="padding-top:30px;">
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="firstName">First Name:</label>
+			    <div class="col-sm-6">
+			      <input type="text" class="form-control" id="firstName">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+			    <div class="col-sm-6"> 
+			      <input type="text" class="form-control" id="lastName">
+			    </div>
+			  </div>
+			  <div class="form-group">
+				  <div style="display:inline-flex;padding-left:170px;" >
+				  	<input type="checkbox" id="isEmployee">Employee<br>
+				  </div>
+				  <div style="display:inline-flex;padding-left:20px;">
+				  	<input type="checkbox" id="isDoctor">Doctor<br>
+				  </div>
+			  </div>
+			<div class="form-group">
+			    <label class="control-label col-sm-2" for="totalBags">Number of Bags:</label>
+			    <div class="col-sm-6"> 
+			      <input type="text" class="form-control" id="totalBags">
+			    </div>
+			  </div>
+			<div class="form-group">
+			    <label class="control-label col-sm-2" for="totalWeight">Total Weight:</label>
+			    <div class="col-sm-6"> 
+			      <input type="text" class="form-control" id="totalWeight">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="flightId">Flight:</label>
+			    <div class="col-sm-6"> 
+			      <input type="text" class="form-control" id="flightId">
+			    </div>
+			  </div>
+			  <div class="form-group"> 
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="button" class="btn btn-default" id="book">Book Flight</button>
+			      <button type="button" class="btn btn-default" id="clear">Clear Employees</button>
+			    </div>
+			  </div>
+			</form>
+			<form class="form-horizontal" style="padding-top:30px;">
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="flightSearch">Flight Search:</label>
+			    <div class="col-sm-6"> 
+			      <input type="text" class="form-control" id="flightSearch">
+			    </div>
+			  </div>
+			  <div class="form-group"> 
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="button" class="btn btn-default" id="displayPassengers">Display Passengers</button>
+			      <button type="button" class="btn btn-default" id="displayFlightInfo">Display Flight</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+		<div id="output" style="padding-top:50px;text-align:center;"> 
+		</div>
+
+		<script src="flights.js"></script>		
+	</body>
+</html>
